@@ -1,0 +1,35 @@
+{
+  "exclude": [],
+  "approvals": [],
+  "quickstart": [
+    {
+      "file": "README.md",
+      "line": 13,
+      "argv": [
+        "python3",
+        "-m",
+        "pip",
+        "install",
+        "."
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "role": "tests",
+      "argv": [
+        "python3",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-q"
+      ]
+    }
+  ],
+  "verify_tools": [
+    "git",
+    "sh"
+  ]
+}

@@ -1,0 +1,6 @@
+{"version":1,"name":"fixledger","cwd":".","inputs":["fixledger/**","tests/**","examples/**","scripts/**","pyproject.toml","README.md","factory.recipe.json"],"checks":[
+{"id":"unit","argv":["python3","-m","unittest","discover","-s","tests"]},
+{"id":"prove","argv":["sh","examples/prove.sh"]},
+{"id":"fresh-install","argv":["sh","scripts/fresh_install.sh"]},
+{"id":"no-personal","argv":["sh","scripts/no_personal.sh"]}
+]}
